@@ -1,0 +1,66 @@
+body{
+  
+}
+
+/**--------- NAVIGATION --------- **/
+#header-nav{
+  background-color: #222;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img{
+  background: url('http://i.imgur.com/F9ZYM7x.jpg?1') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand{
+  padding-top: 25px;
+}
+
+.navbar-brand h1{ /** my name **/
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  color: #E7E7E7;
+}
+
+.navbar-brand h2{ /** my name **/
+  font-size: 1.1em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+}
+
+#nav-list{
+  margin-top: 10px;
+}
+
+#nav-list a{
+  color: #951C49;
+  test-align: center;
+}
+
+#nav-list a:hover{
+  background: #E7E7E7;
+}
+
+#nav-list a span{
+  font-size: 1.8em;
+}
+
+.navbar .nav > li > a {
+    float:none;
+    display:inline-block;
+    vertical-align: top;
+}
