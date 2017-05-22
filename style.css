@@ -64,3 +64,87 @@ body{
     display:inline-block;
     vertical-align: top;
 }
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 1px solid 61122f;
+}
+
+.navbar-header button.navbar-toggle{
+  clear: both;
+  margin-top: -30px;
+}
+
+/** --------- END OF NAVIGATION --------- **/
+
+/** --------- MAIN CONTENT --------- **/
+
+/** ---- ABOUT SECTION ---- **/
+#myAboutDiv{
+  margin-left: -150px;
+}
+/** ---- END OF ABOUT SECTION ---- **/
+
+/** --------- END OF MAIN CONTENT --------- **/
+
+
+/** --------- LARGE DEVICES --------- **/
+@media (min-width: 1200px){
+  .jumbotron{
+    background: url('http://i.imgur.com/swfLj2K.jpg?1')  no-repeat;
+    height: 475px;
+    width: 325px;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
+}
+
+/** --------- MEDIUM DEVICES --------- **/
+@media (min-width: 992px) and (max-width: 1199px){
+  .jumbotron{
+    background: url('http://i.imgur.com/swfLj2K.jpg?1')  no-repeat;
+    height: 475px;
+    width: 325px;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
+}
+
+/** --------- SMALL DEVICES --------- **/
+@media (min-width: 768px) and (max-width: 991px){
+  .jumbotron{
+    background: url('http://i.imgur.com/swfLj2K.jpg?1')  no-repeat;
+    height: 475px;
+    width: 325px;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
+}
+
+/** --------- EXTRA SMALL DEVICES --------- **/
+@media (max-width: 767px){
+  .navbar-brand{
+    padding-top: 10px;
+    height: 80px;
+  }
+  
+  .navbar-brand h1{
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  
+  #collapsable-nav a{
+    font-size: 1.2em;
+  }
+  
+    #collapsable-nav a span{
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  .jumbotron{
+    background: url('http://i.imgur.com/swfLj2K.jpg?1')  no-repeat;
+    height: 275px;
+    width: 125px;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
+}
