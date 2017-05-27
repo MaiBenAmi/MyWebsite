@@ -1,26 +1,25 @@
-var scrollY = 0,
-    speed = 5,
-    destination = 0;
-function scrollTo(arg){
-  destination = document.getElementById(arg).offsetTop;
-  switch(arg){
-    case 'aboutMeHeader':
-      destination += document.getElementById('about_tile').clientHeight / 2;
-      break;
-    case 'projectsHeader':
-      destination += document.getElementById('projects_tile').clientHeight;
-      break;
-    case 'skillsHeader':
-      destination += document.getElementById('skills_tile').clientHeight/2;
-      break;
-            }
-  var scroller = setTimeout(function(){
-    scrollTo(arg);
-  }, 1);
-  
-  scrollY = scrollY + speed;
-  if(scrollY >= destination){
-    clearTimeout(scroller);
-  }
-  window.scroll(0, scrollY);
-}
+$(document).ready(function(){    
+  $('.navigationButton').click(function(e){
+    e.preventDefault();
+    var linkHref = $(this).attr('href'); // this refers to .navigationButton
+    var headerHeight = $('#header-nav').outerHeight(); 
+    $('html, body').animate({
+      scrollTop: $(linkHref).offset().top - headerHeight
+    }, 800);
+    $('#nav-about').removeClass('active');
+    $('#nav-projects').removeClass('active');
+    $('#nav-skills').removeClass('active');
+    
+    switch(linkHref){
+      case '#aboutMeHeader':
+        $('#nav-about').addClass(' active');
+        break;
+      case '#projectsHeader':
+        $('#nav-projects').addClass(' active');
+        break;
+      case '#skillsHeader':
+        $('#nav-skills').addClass(' active');
+        break;
+                   }
+  });
+});
