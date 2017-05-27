@@ -79,22 +79,41 @@ body{
 /** --------- MAIN CONTENT --------- **/
 
 /** ---- ABOUT SECTION ---- **/
-#myAboutDiv{
-  margin-left: -150px;
-}
+  .jumbotron{
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
 /** ---- END OF ABOUT SECTION ---- **/
+
+/** ---- PROJECTS SECTION ---- **/
+#projects_tile, .row{
+  width: 100%;
+}
+#project1, #project2, .col-lg-6{
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  
+}
+#project2{
+  margin-left: 100px;
+}
+#project1:hover, #project2:hover{
+  box-shadow: 0 1px 5px 1px #3F0C1F;
+}
+/** ---- END OF PROJECTS SECTION ---- **/
 
 /** --------- END OF MAIN CONTENT --------- **/
 
 
 /** --------- LARGE DEVICES --------- **/
 @media (min-width: 1200px){
+  #myAboutDiv{
+    margin-left: -150px;
+  }
   .jumbotron{
     background: url('http://i.imgur.com/swfLj2K.jpg?1')  no-repeat;
     height: 475px;
     width: 325px;
-    box-shadow: 0 0 50px #3F0C1F;
-    border: 2px solid #3F0C1F;
   }
 }
 
@@ -104,8 +123,6 @@ body{
     background: url('http://i.imgur.com/swfLj2K.jpg?1')  no-repeat;
     height: 475px;
     width: 325px;
-    box-shadow: 0 0 50px #3F0C1F;
-    border: 2px solid #3F0C1F;
   }
 }
 
@@ -115,8 +132,6 @@ body{
     background: url('http://i.imgur.com/swfLj2K.jpg?1')  no-repeat;
     height: 475px;
     width: 325px;
-    box-shadow: 0 0 50px #3F0C1F;
-    border: 2px solid #3F0C1F;
   }
 }
 
@@ -143,8 +158,6 @@ body{
   .jumbotron{
     background: url('http://i.imgur.com/swfLj2K.jpg?1')  no-repeat;
     height: 275px;
-    width: 125px;
-    box-shadow: 0 0 50px #3F0C1F;
-    border: 2px solid #3F0C1F;
+    width: 225px;
   }
 }
