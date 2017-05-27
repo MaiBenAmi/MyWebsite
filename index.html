@@ -27,20 +27,20 @@
           </div>
           <div id="collapsable-nav" class="collapse navbar-collapse">
             <ul id="nav-list" class="nav navbar-nav navbar-right">
-              <li>
-                <a href="#">
+              <li id="nav-about" class="navigationButton active">
+                <a href="#" onclick="return false;" onmousedown="scrollTo('aboutMeHeader')">
                   <span class="glyphicon glyphicon-info-sign"></span>
                   <br class="hidden-xs"> About
                 </a>
               </li>
-              <li>
-                <a href="#">
+              <li id="nav-projects" class="navigationButton">
+                <a href="#" onclick="return false;" onmousedown="scrollTo('projectsHeader')">
                   <span class="glyphicon glyphicon-plus"></span>
                   <br class="hidden-xs"> Projects
                 </a>
               </li>
-              <li>
-                <a href="#">
+              <li id="nav-skills" class="navigationButton">
+                <a href="#" onclick="return false;" onmousedown="scrollTo('skillsHeader')">
                   <span class="glyphicon glyphicon-tasks"></span>
                   <br class="hidden-xs"> Skills
                 </a>
@@ -51,10 +51,15 @@
       </nav>
     </header>
     <div id="main-content" class="container">
+      <div class="row" id="aboutMeHeader">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
+              <h1 class="page-header">About Me</h1>
+        </div>
+      </div>
       <div class="row" id="about_tile">
         <div class="col-md-6 col-sm-6 col-xs-12" id="myPictureDiv">
           <div class="jumbotron">
-            <img src="http://i.imgur.com/RHGEt8X.jpg?1" alt="My Picture" class="img-responsive visible-xs">
+            <img src="" class="img-responsive">
           </div>                   
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12" id="myAboutDiv">
@@ -66,8 +71,51 @@
           </p>
         </div>
       </div>
+      <div class="row" id="projectsHeader">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
+              <h1 class="page-header">Projects</h1>
+        </div>
+      </div>
+      <div class="row" id="projects_tile">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center" id="project1">
+          <h1>College Scheduling System</h1>
+          <p> Team project done in a college course. Built college lecturers teaching scheduling system in C# and SQL.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center" id="project2">                 <h1>Mine Sweeper</h1>
+          <p> Mine sweeper game done in Angular 2, supports up to 300X300 tiles, superman mode and custom height, width and number of mines. </p>
+        </div>
+      </div>
+
+      <div class="row" id="skillsHeader">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
+              <h1 class="page-header">Skills</h1>
+        </div>
+      </div>
+      <div class="row" id="skills_tile">
+        <div class="col-md-6 col-sm-6 col-xs-12" id="frontEndSkills">
+          <h3>Frontend Development
+          <div data-label="HTML5" data-level="90" class="chart">
+            <span></span>
+            <p></p>
+          </div>
+          <div data-label="CSS3" data-level="70" class="chart">
+            <span></span>
+            <p></p>
+          </div>
+          <div data-label="Javascript" data-level="80" class="chart">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12" id="backEndSkills">
+          
+        </div>
+        
+      </div>
+
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="myWebsite.js" ></script>
 </html>
