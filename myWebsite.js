@@ -6,20 +6,23 @@ $(document).ready(function(){
     $('html, body').animate({
       scrollTop: $(linkHref).offset().top - headerHeight
     }, 800);
-    $('#nav-about').removeClass('active');
-    $('#nav-projects').removeClass('active');
-    $('#nav-skills').removeClass('active');
-    
-    switch(linkHref){
-      case '#aboutMeHeader':
-        $('#nav-about').addClass(' active');
-        break;
-      case '#projectsHeader':
-        $('#nav-projects').addClass(' active');
-        break;
-      case '#skillsHeader':
-        $('#nav-skills').addClass(' active');
-        break;
-                   }
+  });
+  $("#contactForm").submit(function(e){
+    var email = document.getElementById('email'),
+        message = document.getElementById('message');
+    if(!email.value || !message.value){
+      alert("Check your input please.");
+    }
+    else{
+      $.ajax({
+        url: "https://formspree.io/maibenami@gmail.com",
+        method: "POST",
+        data: $(this).serialize(),
+        dataType: "json"
+      });
+      e.preventDefault();
+      $(this).get(0).reset(); // Reset the form
+      alert("Message sent successfully!");
+    }
   });
 });
