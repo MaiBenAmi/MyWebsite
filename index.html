@@ -1,5 +1,5 @@
 <html>
-  <header>   
+  <header>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -7,115 +7,119 @@
   <body>
     <header>
       <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <!--  <a href="index.html" class="pull-left visible-md visible-lg">
-              <div id="logo-img" alt="Logo image"></div>
-            </a> -->
-            <div class="navbar-brand">
-              <a href="index.html"> 
-                <h1> Mai Ben Ami </h1>
-                <!-- <h2> Software Engineering Student </h2> -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="collapsable-nav">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#about" class="navigationButton">
+                About
               </a>
-            </div>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-              <span class="sr-only">Toggle Navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div id="collapsable-nav" class="collapse navbar-collapse">
-            <ul id="nav-list" class="nav navbar-nav navbar-right">
-              <li id="nav-about" class="active">
-                <a href="#aboutMeHeader" class="navigationButton">
-                  <span class="glyphicon glyphicon-info-sign"></span>
-                  <br class="hidden-xs"> About
-                </a>
-              </li>
-              <li id="nav-projects">
-                <a href="#projectsHeader" class="navigationButton">
-                  <span class="glyphicon glyphicon-plus"></span>
-                  <br class="hidden-xs"> Projects
-                </a>
-              </li>
-              <li id="nav-skills">
-                <a href="#skillsHeader" class="navigationButton">
-                  <span class="glyphicon glyphicon-tasks"></span>
-                  <br class="hidden-xs"> Skills
-                </a>
-              </li>          
-            </ul>
-          </div>
+            </li>
+            <li>
+              <a href="#education" class="navigationButton">
+                Education
+              </a>
+            </li>
+            <li>
+              <a href="#projects" class="navigationButton">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#skills" class="navigationButton">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="navigationButton">
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
-    <div id="main-content" class="container">
-      <div class="row" id="aboutMeHeader">
-        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
-              <h1 class="page-header">About Me</h1>
-        </div>
+    <div class="content">
+      <div id="first-content">
+        <h1>Mai Ben-Ami</h1>
+        <h2>Software Engineer Student</h2>
+        <a href="#" class="btn-rounded-white">Download Resume</a>
       </div>
-      <div class="row" id="about_tile">
-        <div class="col-md-6 col-sm-6 col-xs-12" id="myPictureDiv">
-          <div class="jumbotron">
-            <img src="" class="img-responsive">
-          </div>                   
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-12" id="myAboutDiv">
-          <p>
-            My name is Mai Ben Ami, I'm 24 years old and I'm a third year student, pursuing BSc in Software Engineering. </br>
-            I'm currently looking for a student position, specifically in the field of development.</br>
-      I enjoy programming in all languages that I'm familiar with, but mostly in Java, C# and Javascript.</br>
-    I also enjoy riding bicycle, play computer games (e.g Battlefield 1, GTA V etc) and listening to music (mostly old rock and metal).
-          </p>
-        </div>
-      </div>
-      <div class="row" id="projectsHeader">
-        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
-              <h1 class="page-header">Projects</h1>
-        </div>
-      </div>
-      <div class="row" id="projects_tile">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center" id="project1">
-          <h1>College Scheduling System</h1>
-          <p> Team project done in a college course. Built college lecturers teaching scheduling system in C# and SQL.</p>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center" id="project2">                 <h1>Mine Sweeper</h1>
-          <p> Mine sweeper game done in Angular 2, supports up to 300X300 tiles, superman mode and custom height, width and number of mines. </p>
-        </div>
-      </div>
-
-      <div class="row" id="skillsHeader">
-        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
-              <h1 class="page-header">Skills</h1>
-        </div>
-      </div>
-      <div class="row" id="skills_tile">
-        <div class="col-md-6 col-sm-6 col-xs-12" id="frontEndSkills">
-          <h3>Frontend Development
-          <div data-label="HTML5" data-level="90" class="chart">
-            <span></span>
-            <p></p>
-          </div>
-          <div data-label="CSS3" data-level="70" class="chart">
-            <span></span>
-            <p></p>
-          </div>
-          <div data-label="Javascript" data-level="80" class="chart">
-            <span></span>
-            <p></p>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h2 class="heading">About Me</h2>
+            </div>
+            <div class="col-md-8">
+              <p>
+                My name is Mai Ben Ami, I'm 24 years old and I'm a                   third year student, pursuing BSc in Software                         Engineering. </br>
+                I'm currently looking for a student position,                       specifically in the field of development.</br>
+                I enjoy programming in all languages that I'm                       familiar with, but mostly in Java, C# and                           Javascript.</br>
+                I also enjoy riding bicycle, play computer games                     (e.g Battlefield 1, GTA V etc) and listening to                     music (mostly old rock and metal).
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-6 col-xs-12" id="backEndSkills">
-          
-        </div>
-        
       </div>
-
+      <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+          <h3>SCE - Shamoon College of Engineering</h3>
+          <span class="education-date">October 2014 - July 2018</span>
+            <h4>Bachelor of Science in Software Engineering</h4>
+            <p>
+            </p>
+        </div>
+      </div>
+      <div id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="row" id="projects_tile">
+          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text-center" id="project1">
+            <h1>College Scheduling System</h1>
+            <p> Team project done in a college course. Built college lecturers teaching scheduling system in C# and SQL.</p>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text-center" id="project2">                 
+            <h1>Mine Sweeper</h1>
+            <p> Mine sweeper game done in Angular 2, supports up to 300X300 tiles, superman mode and custom height, width and number of mines. </p>
+          </div>
+        </div>
+      </div>
+      <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+          <li>C</li>
+          <li>C++</li>
+          <li>C#</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div id="contact">
+        <h2>Contact Me</h2>
+        <div id="contact-form">
+          <form id="contactForm" method="POST" action="https://formspree.io/email@email.com">
+            <input type="hidden" name="_subject" value="Contact request from personal website" />
+            <input id="email" type="email" name="_replyto" placeholder="Your email" required>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="myWebsite.js" ></script>
+  <script type="text/javascript" src="myWebsite.js" ></script>
 </html>
