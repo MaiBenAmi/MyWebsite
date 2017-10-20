@@ -196,12 +196,12 @@ html{
   margin: 0 auto 30px auto;
   margin-top: 50px;
 }
-#project1, #project2, .col-lg-6{
+#project1, #project2, #project3, .col-lg-6{
   border: 2px solid #3F0C1F;
   overflow: hidden;
   margin-left: 100px;
 }
-#project1:hover, #project2:hover{
+#project1:hover, #project2:hover , #project3:hover{
   box-shadow: 0 1px 5px 1px #3F0C1F;
 }
 
